@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles/faq.css";
+import {AiOutlineArrowDown} from 'react-icons/ai'
 function FAQSection() {
   const [showAnswers, setShowAnswers] = useState({}); // for tracking to show ans
 
@@ -91,7 +92,7 @@ function FAQSection() {
             <ul>
               {faqData.map((item, index) => (
                 <li key={index}>
-                  <h3 onClick={() => toggleAnswer(index)}>{item.question}</h3>
+                  <h3 onClick={() => toggleAnswer(index)}>{item.question}<AiOutlineArrowDown className="mx-4"/></h3>
                   {showAnswers[index] && <p>{item.answer}</p>}
                 </li>
               ))}
