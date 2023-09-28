@@ -1,0 +1,22 @@
+.card-img {
+  height: 550px;
+}
+.para-write {
+  width: 35%;
+}
+.heading-text {
+  font-weight: 700;
+  margin-top: 12%;
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    filter: blur(5px);
+    height: 350px;
+  }
+  .para-write {
+    width: 65%;
+    filter: contrast(20px);
+    color: brown;
+  }
+}
